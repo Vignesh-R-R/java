@@ -151,7 +151,7 @@ private void numbers5to9() {
 	System.out.println("---------------->6");
 	
 	/*
-		     * * * *
+		         * * * *
 			      *
 			   * * *
 			    *
@@ -174,7 +174,7 @@ private void numbers5to9() {
 	
 /*
  		* * * *
- 		*	  *
+ 		*     *
  		* * * *
  		*     *
  		* * * *
