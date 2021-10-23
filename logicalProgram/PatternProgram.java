@@ -26,7 +26,7 @@ for(int i=1;i<=5;i++) {
 		System.out.print(j+" ");
 	}System.out.println();
 }System.out.println("----------");
-/*
+ /* 
 	1 
 	2 3 
 	3 4 5 
