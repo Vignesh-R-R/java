@@ -18,7 +18,7 @@ private void first20Prime() {
 	if(i%j==0) {
 		checker=false;
 		break;
-	}
+  	 }
 	j++;}
 if(checker==true) {
 	count++;
