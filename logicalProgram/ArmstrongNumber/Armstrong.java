@@ -7,7 +7,7 @@ public static void main(String[] args) {
 	find.armstrongNo(152);
 	find.armstrongNo(0);
 	find.armstrongNo(9);
-}
+ }
 
 private void armstrongNo(int value) {
 	int power=0;
