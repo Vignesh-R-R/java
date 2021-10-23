@@ -8,7 +8,7 @@ sumOfBoth=firstNo+secondNo;
 firstNo =secondNo;
 secondNo=sumOfBoth;
 	System.out.print(","+sumOfBoth);
-}}
+ }}
 
 	public static void main(String[]args){
 Fibonacci addMeNext =new Fibonacci();
