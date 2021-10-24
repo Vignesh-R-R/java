@@ -12,7 +12,7 @@ call.minMax();
 	
 	void minMax() {
 		Scanner sc= new Scanner(System.in);
-		System.out.print("number of times to pay for a year : ");
+		System.out.print("number of times to pay : ");
 		int timesOfPay=sc.nextInt();
 	int []list =new int[timesOfPay];
 	int minAmount=0;
@@ -46,7 +46,7 @@ System.out.println("highest amount of the year    : ₹ "+ maxAmount);
 
 /*INPUT 
 	 
-number of times to pay for a year : 6
+number of times to pay  : 6
 amount :1200
 amount :1100
 amount :1300
