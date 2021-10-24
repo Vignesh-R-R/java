@@ -12,7 +12,7 @@ call.minMax();
 	
 	void minMax() {
 		Scanner sc= new Scanner(System.in);
-		System.out.print("number of times to pay : ");
+		System.out.print("number of month to pay : ");
 		int timesOfPay=sc.nextInt();
 	int []list =new int[timesOfPay];
 	int minAmount=0;
@@ -25,7 +25,7 @@ for(int count=0;count<list.length;count++) {
 minAmount=list[0];
 maxAmount=list[0];
 	}
-	if(minAmount>list[count]) {				//minimum value list out
+	if(minAmount>list[count]) {				//list out minimum value
 		minAmount=list[count];
 	}
 	if(maxAmount<=list[count]) {			//list out maximum value
@@ -46,7 +46,7 @@ System.out.println("highest amount of the "+month   +"month : ₹ "+ maxAmount);
 
 /*INPUT 
 	 
-number of times to pay  : 6
+number of month to pay  : 6
 amount :1200
 amount :1100
 amount :1300
@@ -60,9 +60,9 @@ month 6: ₹ 1300
 month 8: ₹ 2000
 month 10: ₹ 1800
 month 12: ₹ 1700
-total amount of pay in a year : ₹ 9100
-lowest amount of the year     : ₹ 1100
-highest amount of the year    : ₹ 2000
+total amount of pay for 12 month  : ₹ 9100
+lowest amount of the 12 month     : ₹ 1100
+highest amount of the 12 month    : ₹ 2000
 	 
 	 */
 	
