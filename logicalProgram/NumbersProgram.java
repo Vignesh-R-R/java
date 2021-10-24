@@ -4,6 +4,7 @@ public class NumbersProgram {
 	public static void main(String[] args) {
 		NumbersProgram call=new NumbersProgram();
 		System.out.println("number program");
+
 	call.try1();
 		System.out.println("----------");
 	call.try2();
@@ -16,6 +17,7 @@ public class NumbersProgram {
 	}
 
 		void try1() {
+
 		for(int row=5;row>=1;--row) {
 			for(int col=5;col>=row;--col) {
 				System.out.print(col+" ");
@@ -26,15 +28,11 @@ public class NumbersProgram {
 				for(int col=1;col<=row;++col) {
 					System.out.print(col+" ");
 				}System.out.println();
-			}}
+			}}	
+
 	
-		private void try4() {	
-		/*int end =1;
-	for(int i=1;i<=4;i++) {
-		for(int j=i;j<=end;j++) {
-			System.out.print(j+" ");
-		}System.out.println();
-		end+=2;*/							//another view
+		private void try4() {
+							
 	for(int row=1;row<=5;row++) {
 		for(int col=0;col<row;col++) {
 			System.out.print(row+col+" ");
@@ -62,9 +60,6 @@ public class NumbersProgram {
 		}
 		
 		
-		
-
-
 /*RESULT:
 number program
 5 
@@ -79,6 +74,7 @@ number program
 1 2 3 4 
 1 2 3 4 5 
 ----------
+
 1 
 2 3 
 3 4 5 
@@ -90,12 +86,14 @@ number program
 3 6 9 
 4 8 12 16 
 5 10 15 20 25 
+
 ----------
 1 * * * * 
 1 2 * * * 
 1 2 3 * * 
 1 2 3 4 * 
 1 2 3 4 5 
+
   
 
  */
