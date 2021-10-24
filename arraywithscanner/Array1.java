@@ -38,9 +38,9 @@ for(int count=0;count<list.length;count++) {
 	total=total+list[count];		//total
 	month=month+2;
 }
-System.out.println("total amount of pay in a year : ₹ "+total);
-System.out.println("lowest amount of the year     : ₹ "+minAmount);
-System.out.println("highest amount of the year    : ₹ "+ maxAmount);
+System.out.println("total amount to pay for "+month+": ₹ "+total);
+System.out.println("lowest amount of the"+month+    " : ₹ "+minAmount);
+System.out.println("highest amount of the"+month   +" : ₹ "+ maxAmount);
 	
 	}}
 
