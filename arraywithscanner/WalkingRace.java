@@ -7,7 +7,7 @@ public static void main(String[]args) {
 WalkingRace call=new WalkingRace();
 //call.raceSelection();
 call.withScanner();
-}
+ }
 
 private void withScanner() {
 	Scanner sc=new Scanner(System.in);
