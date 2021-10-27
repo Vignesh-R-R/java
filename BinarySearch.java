@@ -20,7 +20,7 @@ public static void main(String[] args) {
 			if(num==0) {
 				storeNo[check]=sc.nextInt();
 				order[check]=storeNo[check];
-		 	  }
+		 	   }
 			
 			if(order[num]>order[check]) {
 				int temp=order[check];
