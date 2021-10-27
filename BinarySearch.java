@@ -27,7 +27,7 @@ public static void main(String[] args) {
 				order[check]=order[num];
 				order[num]=temp;	
 			binarySearching(order);	
-			}}}}
+			  }}}}
 	
 	
 	
