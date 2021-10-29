@@ -53,7 +53,7 @@ void transfer(int[][] matrix) {
 }}
 
 /*
- -----------console input----------------
+ -------------------console input----------------
 enter the matrix row and coloumn with space: 3 3
 enter value from matrix in order of row by row with space: 
 1 2 3 4 5 6 7 8 9
