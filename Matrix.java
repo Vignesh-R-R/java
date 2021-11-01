@@ -6,7 +6,7 @@ public class Matrix {
 public static void main(String[] args) {
 	Matrix call=new Matrix();
 	call.total();
-}  
+}   
 
 	void total() {
 Scanner sc=new Scanner(System.in);
