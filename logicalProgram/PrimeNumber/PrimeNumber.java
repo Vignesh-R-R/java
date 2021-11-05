@@ -27,11 +27,7 @@ while(j<i){						//check condition
 void usingForLoop(){
 boolean checker=true;               
 int count=0;
-<<<<<<< HEAD:logicalProgram/PrimeNumber/PrimeNumber.java
 int i;
-=======
-int i;           
->>>>>>> c4949c1fc44da2a4eb825d7caa1a7c33b34284ce:logicalProgram/PrimeNumber.java
 
 	for(i=2;i<100;i++){
 		

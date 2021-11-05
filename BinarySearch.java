@@ -9,7 +9,7 @@ public static void main(String[] args) {
 	BinarySearch call=new BinarySearch();
 	call.storingArrangingNo();
 	
-}
+ }
 	void storingArrangingNo() {
 	System.out.print("total number want to store  :");
 	int storeNo[]=new int[sc.nextInt()];
@@ -20,14 +20,14 @@ public static void main(String[] args) {
 			if(num==0) {
 				storeNo[check]=sc.nextInt();
 				order[check]=storeNo[check];
-			}
+		 	   }
 			
 			if(order[num]>order[check]) {
 				int temp=order[check];
 				order[check]=order[num];
 				order[num]=temp;	
 			binarySearching(order);	
-			}}}}
+			   }}}}
 	
 	
 	
