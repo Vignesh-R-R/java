@@ -51,7 +51,7 @@ Scanner sc=new Scanner(System.in);
 	}else{System.out.print("victory");}
 		}
 	
-	int unknownNumber(){
+	int unknownNumber(){							//creating code for unknown Number
 		System.out.print("enter min value range: ");
 		int min=sc.nextInt();
 		System.out.print("enter max value range: ");
@@ -60,7 +60,7 @@ Scanner sc=new Scanner(System.in);
 		length =String.valueOf(unknownNumber).length();
 		return unknownNumber;
 	}
-	int myNumber(){
+	int myNumber(){								//creating way for my number
 		System.out.print("enter your number: ");
 		int myNumber=sc.nextInt();
 		return myNumber;
