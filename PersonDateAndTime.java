@@ -13,7 +13,7 @@ public static void main(String[] args) {
 void insertData(){
 	System.out.print("how many person to add: ");
 	length=sc.nextInt();								//length means number of person
-	details=5; 											//number details
+	details=5; 											//number of details
 	String [][]document=new String[length][details];  
 	for(int person=0;person<length;person++){
 		for(int j=0;j<details;j++){							// j is particular person detail
