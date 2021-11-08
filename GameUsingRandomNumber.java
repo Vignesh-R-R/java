@@ -25,7 +25,7 @@ Scanner sc=new Scanner(System.in);
 				myNumber=myNumber/10;}
 		compare(unknownNumberArray,myNumberArray);}
 	
-	void compare(int[] unknownNumberArray,int[] myNumberArray){
+	void compare(int[] unknownNumberArray,int[] myNumberArray){			//to compare the unknown number and given my number
 
 		for(i=0;i<length;i++){
 			int count=0;
