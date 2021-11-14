@@ -11,7 +11,7 @@ Scanner sc=new Scanner(System.in);
 	public static void main(String[] args) {
 		GameUsingRandomNumber obj=new GameUsingRandomNumber();
 		obj.insertInArray(obj.unknownNumber(),obj.myNumber());
-		}
+}
 	
 	void insertInArray(int unknownNumber,int myNumber){
 		unknownNumber1=unknownNumber;
