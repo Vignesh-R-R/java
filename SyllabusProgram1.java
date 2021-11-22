@@ -4,7 +4,7 @@ public class SyllabusProgram1 {
 public static void main(String[] args) {
 SyllabusProgram1 twoVariable =new SyllabusProgram1();
 twoVariable.swappingNumber();
-//twoVariable.number();
+twoVariable.number();
 twoVariable.decimalToBinary();
 twoVariable.binaryToDecimal();
 }
