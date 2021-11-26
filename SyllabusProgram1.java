@@ -10,7 +10,20 @@ twoVariable.binaryToDecimal();
 }
 
 	private void binaryToDecimal() {
-	
+	//using parseint
+	System.out.println(Integer.parseInt("101010", 2));
+		
+	//another method
+	int binary =101010;
+	int decimal=0;
+	int no=0;
+	while(binary!=0) {
+		int rem=binary%10;
+	decimal+=rem*Math.pow(2, no);
+	binary=binary/10;
+	  no++;
+	}System.out.println(decimal);
+	//RESULT: 42
 }
 
 	private void decimalToBinary() {
