@@ -1,4 +1,19 @@
 public class PalindeomeNumber{
+	
+	//another view
+	void palindeome(){
+	String a = "123321";
+  //  int j = a.length() - 1;
+    Boolean b = true;
+    for (int i = 0; i < a.length() / 2; i++/*,j--*/) {
+      if (a.charAt(i) != a.charAt((a.length()-(i+1)))) {  //$used in single variable
+        b = false;
+      }
+    }
+    System.out.println(b);
+  }
+  
+	
 void palindeomeNo(String m,long checkNo){
 	long rem=0;
 	long sum=0;
