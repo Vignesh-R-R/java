@@ -1,0 +1,131 @@
+--------------------------------------------------------------------------->edit text + button= showing output in toast
+package com.geeksforgeeks.myfirstkotlinapp
+import androidx.appcompat.app.AppCompatActivity
+import android.os.Bundle
+import android.widget.Button
+import android.widget.EditText
+import android.widget.Toast
+
+class MainActivity : AppCompatActivity() {
+
+	override fun onCreate(savedInstanceState: Bundle?) {
+		super.onCreate(savedInstanceState)
+		setContentView(R.layout.activity_main)
+
+		// finding the button
+		val showButton = findViewById<Button>(R.id.showInput)
+
+		// finding the edit text
+		val editText = findViewById<EditText>(R.id.editText)
+
+		// Setting On Click Listener
+		showButton.setOnClickListener {
+
+			// Getting the user input
+			val text = editText.text
+
+			// Showing the user input
+			Toast.makeText(this, text, Toast.LENGTH_SHORT).show()
+		}}}
+    
+    
+    -------------------------------------------------------------------->text view in toast
+        //accessing our textview from layout
+            val textView = findViewById<TextView>(R.id.text_view_id) as TextView
+            textView?.setOnClickListener{ Toast.makeText(this@MainActivity,
+                R.string.text_on_click, Toast.LENGTH_LONG).show() }
+------------------------------------------------------------------------->activity life cycle
+package com.example.myapplication
+
+import androidx.appcompat.app.AppCompatActivity
+import android.os.Bundle
+import android.widget.Toast
+
+
+class MainActivity : AppCompatActivity() {     					     //?AppCompatActivity=for backward compatability
+
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_main)            			  //R means
+    Toast.makeText(applicationContext,"created",Toast.LENGTH_LONG).show()      // ? application context purpose and why or some other
+    }
+
+    override fun onStart() {
+        super.onStart()
+        Toast.makeText(applicationContext,"started",Toast.LENGTH_LONG).show()
+    }
+
+    override fun onResume() {
+        super.onResume()
+               //  Log.d("lifecycle","this that log message____________________----____----")
+        Toast.makeText(applicationContext,"resumed",Toast.LENGTH_LONG).show()
+    }
+
+    override fun onPause() {
+        super.onPause()
+        Toast.makeText(applicationContext,"paused",Toast.LENGTH_SHORT).show()
+    }
+
+    override fun onRestart() {
+        super.onRestart()
+    Toast.makeText(applicationContext,"restarted",Toast.LENGTH_SHORT).show()
+    }
+
+    override fun onStop() {
+        super.onStop()
+    Toast.makeText(applicationContext,"stopped",Toast.LENGTH_LONG).show()
+    }
+
+    override fun onDestroy() {
+        super.onDestroy()
+    Toast.makeText(applicationContext,"destroyed",Toast.LENGTH_LONG).show()
+    }}
+--------------------------------------------------------------------------------------->button,edittext,textview
+package com.example.myapplication
+
+import androidx.appcompat.app.AppCompatActivity
+import android.os.Bundle
+import android.text.Editable
+import android.widget.EditText
+import android.widget.TextView
+
+
+class MainActivity : AppCompatActivity() {
+
+   lateinit var ed: EditText
+   lateinit var tv: TextView
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_main)
+        ed=findViewById(R.id.nameinput);
+     tv= findViewById(R.id.textcode)
+       }
+
+    fun function_output(view: android.view.View) {      //<---- from xml file android:onclick button
+        if(view.id==R.id.buttoninput){          //view id  means
+			//getting the data and can store in it by using Editable and by using editable we can change into string to edit
+            
+	val data: Editable=ed.text
+            val str: String=data.toString().trim()
+            if(str.isNotEmpty()){     //if they typed then the process should start other wise should not start
+               tv.setText(str)
+            }}}}
+---------------------------------------------------------------------------------------> taken image as button when we click the toast will be shown(sum of two numbers)
+ setContentView(R.layout.activity_main)
+        val num1 = findViewById<EditText>(R.id.Num1)
+        val num2 = findViewById<EditText>(R.id.Num2)
+        val imgbtn = findViewById<ImageButton>(R.id.imageBtn)
+        imgbtn.setOnClickListener {
+         if (num1.text.toString().isEmpty() || num2.text.toString().isEmpty()) {
+              Toast.makeText(applicationContext,
+                  "Enter both numbers", Toast.LENGTH_SHORT).show()
+            }
+            else {
+                val num1 = Integer.parseInt(num1.text.toString())
+                val num2 = Integer.parseInt(num2.text.toString())
+                Toast.makeText(applicationContext,
+                    "Sum of the numbers = " + (num1 + num2),
+                    Toast.LENGTH_SHORT).show()
+---------------------------------------------------------------------------------------->
+    
