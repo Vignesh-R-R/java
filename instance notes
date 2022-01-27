@@ -31,6 +31,7 @@ Manifest file: It contains information about package including components such a
 widget:
 android.widget.Button subclass of TextView class
 CompoundButton is the subclass of Button class
+there is two ways we can perform with button by using setonclicklistner and onclick
 
 
 
