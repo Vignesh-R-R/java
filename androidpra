@@ -1,0 +1,74 @@
+                                                                 FOR JAVA
+------------------------------------------------------>adding sum of number using editView*2, button
+import androidx.appcompat.app.AppCompatActivity;
+import android.os.Bundle;
+import android.view.View;
+import android.view.Window;
+import android.view.WindowManager;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.Toast;
+
+public class MainActivity extends AppCompatActivity {
+EditText i;
+EditText j;
+Button b;
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+setContentView(R.layout.activity_main);
+i=findViewById(R.id.number1);
+j=findViewById(R.id.number2);
+b=findViewById(R.id.calculator1);
+b.setOnClickListener(new View.OnClickListener(){
+    @Override
+    public void onClick(View view) {
+        String s=i.getText().toString();
+        String s1=j.getText().toString();
+        int ii=Integer.parseInt(s);
+        int jj=Integer.parseInt(s1);
+        int sum=ii+jj;
+        Toast.makeText(getApplicationContext(),String.valueOf(sum),Toast.LENGTH_LONG).show();
+    }} );}}
+----------------------------------------------------------->hide title bar and full screen
+this code must use before setcontentview()
+1.	requestWindowFeature(Window.FEATURE_NO_TITLE);//will hide the title   ?
+2.	getSupportActionBar().hide(); //hide the title bar  
+3.	this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREENWindowManager.LayoutParams.FLAG_FULLSCREEN); //show the activity in full screen  
+                  // setflags(mask,tag)
+----------------------------------------------------------->toast
+getApplicationContext() method returns the instance of Context in toast
+Toast toast=Toast. makeText(getApplicationContext(),"Hello ",Toast. LENGTH_SHORT);
+toast. setMargin(50,50);
+toast. show();
+------------------------------------------------------------>checkbox  (android.widget.CheckBox)
+------------------------------------------------------------>
+------------------------------------------------------------>
+------------------------------------------------------------>
+------------------------------------------------------------>
+------------------------------------------------------------>
+------------------------------------------------------------>
+------------------------------------------------------------>
+------------------------------------------------------------>
+------------------------------------------------------------>
+------------------------------------------------------------>
+
+------------------------------------------------------------>
+------------------------------------------------------------>
+
+------------------------------------------------------------>
+
+
+
+------------------------------------------------------------>
+
+
+
+
+
+
+
+
+
+
+
