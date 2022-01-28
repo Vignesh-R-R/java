@@ -42,6 +42,8 @@ Toast toast=Toast. makeText(getApplicationContext(),"Hello ",Toast. LENGTH_SHORT
 toast. setMargin(50,50);
 toast. show();
 ------------------------------------------------------------>checkbox  (android.widget.CheckBox)
+public boolean isChecked()	Returns true if it is checked otherwise false.
+public void setChecked(boolean status)	Changes the state of the CheckBox.
 ------------------------------------------------------------>
 ------------------------------------------------------------>
 ------------------------------------------------------------>
